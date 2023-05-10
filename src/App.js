@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import './App.css';
 
 
@@ -10,40 +10,36 @@ function App() {
   const [temperature, setTemperature] = useState(0);
   const [tempColor, setTempColor] = useState("zero");
 
+  useEffect(() => {
+
+    switch(true){
+      case temperature <= -1:
+        setTempColor("lessfive");
+        break;
+      case temperature <= 14:
+        setTempColor("zero");
+        break;
+      case temperature <= 29:
+        setTempColor("fifteen");
+        break;
+      case temperature <= 44:
+        setTempColor("thirty");
+        break;
+      case temperature >= 45:
+        setTempColor("fourty");
+        break;
+    }
+  }, [temperature] );
+
   const tempIncrease = () =>{
     setTemperature(temperature + 1);
-    if(temperature >= -1){
-      setTempColor("zero");
-    }
-    if(temperature >= 14){
-      setTempColor("fiftheen");
-    }
-    if(temperature >= 29){
-      setTempColor("thirty");
-    }
-    if(temperature >= 44){
-      setTempColor("fourty");
-    }
-    if(temperature == 50){
+     if(temperature == 50){
       setTemperature(temperature);
     }
   };
 
   const tempDecrease = () =>{
     setTemperature(temperature - 1);
-    if(temperature <= 45){
-      setTempColor("thirty");
-    }
-    if(temperature <= 30){
-      setTempColor("fiftheen");
-    }
-    if(temperature <= 15){
-      setTempColor("zero");
-    }
-    if(temperature <= 0){
-      setTempColor("lessfive");
-    }
-
     if(temperature == -10){
       setTemperature(temperature);
     }

@@ -46,7 +46,7 @@
 
 .lessfive{background-color: #f7f7f7; color: #444; transition: .5s ease}
 .zero{background-color: #bceefb; color: #444; transition: .5s ease}
-.fiftheen{background-color: #b9ecd8; color: #444; transition: .5s ease}
-.thirty{background-color: #f3a981;  transition: .5s ease}
-.fourty{background-color: #ff3c1c;  transition: .5s ease}
+.fifteen{background-color: #b9ecd8; color: #444; transition: .5s ease}
+.thirty{background-color: #f3a981;  color: #444; transition: .3s ease}
+.fourty{background-color: #ff3c1c; color: #444;  transition: .5s ease}
 
