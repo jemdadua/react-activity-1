@@ -44,9 +44,9 @@
     color: #fff;
 }
 
-.lessfive{background-color: #f7f7f7; color: #444; transition: .5s ease}
-.zero{background-color: #bceefb; color: #444; transition: .5s ease}
-.fifteen{background-color: #b9ecd8; color: #444; transition: .5s ease}
-.thirty{background-color: #f3a981;  color: #444; transition: .3s ease}
-.fourty{background-color: #ff3c1c; color: #444;  transition: .5s ease}
+.freezing{background-color: #f0f0f0; color: #444; transition: .5s ease}
+.cold{background-color: #5648e9; color: #444; transition: .5s ease}
+.cool{background-color: #0fe0f7; color: #444; transition: .5s ease}
+.warm{background-color: #f3a981;  color: #444; transition: .3s ease}
+.hot{background-color: #ff3c1c; color: #444;  transition: .5s ease}
 
